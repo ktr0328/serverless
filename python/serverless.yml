@@ -10,6 +10,9 @@ provider:
         - dynamodb:*
       Resource: "*"
 
+plugins:
+  - serverless-python-requirements
+
 functions:
   hello:
     handler: handler.hello
